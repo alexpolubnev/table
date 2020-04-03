@@ -1,0 +1,141 @@
+.container {
+  width: 1280px;
+  margin: 50px auto;
+  padding: 15px;
+  background-color: lightgrey;
+  box-sizing: border-box;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  padding: 5px 15px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.search input{
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 18px;
+}
+.search img{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.content {
+  background-color: #fff;
+}
+
+.content__head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  padding: 0px 20px;
+  height: 60px;
+  box-sizing: border-box;
+  color: green;
+}
+.content__sort {
+  flex: 0 0 70%;
+  display: flex;
+  justify-content: left;
+}
+.content__sort i {
+  position: relative;
+  cursor: pointer;
+}
+
+.content__sort i:before{
+  content: '▴';
+  position: absolute;
+  top: -6px;
+  right: -2px;
+  color: lightgrey;
+}
+.content__sort i:after{
+  content: '▾';
+  position: absolute;
+  right: 0px;
+  bottom: -6px;
+  color: lightgrey;
+}
+.content__sort .sorted:before{
+  color: lightgrey;
+}
+.content__sort .sorted:after{
+  color: green;
+}
+.content__sort .nosorted:before{
+  color: green;
+}
+.content__sort .nosorted:after{
+  color: lightgrey;
+}
+.content__head i {
+  flex: 0 0 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.item__hr {
+  margin: 0px 20px;
+} 
+
+.item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  padding: 0px 20px;
+  text-align: center;
+  box-sizing: border-box;
+
+}
+.item__title {
+  text-align: left;
+  flex: 0 0 70%;
+}
+.item__type {
+  color: orange;
+}
+.item__sites, .item__type, .item__status {
+  flex: 0 0 10%;
+}
+
+.item__status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.item__status img {
+  width: 15px;
+  height: 15px;
+}
+
+.disable span, .enable span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 25px;
+  border-radius: 20px;
+}
+.enable span {
+  background-color: green;
+}
+
+.disable span {
+  background-color: grey;
+}
